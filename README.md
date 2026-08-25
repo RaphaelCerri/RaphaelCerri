@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="./assets/header.svg" width="100%" alt="Raphael Caveagna, AI Engineer and AI Solutions Architect" />
+  <picture>
+    <source srcset="./assets/header.svg" type="image/svg+xml" />
+    <img src="./assets/header.svg" width="100%" alt="Raphael Caveagna, AI Engineer and AI Solutions Architect" />
+  </picture>
 </p>
 
 <p align="center">
