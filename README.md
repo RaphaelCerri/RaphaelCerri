@@ -6,6 +6,10 @@
 </p>
 
 <p align="center">
+  <strong>English</strong> · <a href="./README.pt-BR.md">Português</a>
+</p>
+
+<p align="center">
   <a href="https://www.linkedin.com/in/raphael-cerri-caveagna">LinkedIn</a> ·
   <a href="mailto:raphael.cerri@hotmail.com">Email</a> ·
   São Paulo, Brazil · Open to remote roles in Brazil and internationally
@@ -43,44 +47,15 @@ private. Their outcomes do not:
 - **Business perspective:** former founder and technical operator of cross-border e-commerce
   businesses in Brazil and Chile, responsible for systems, analytics, catalog operations, and growth.
 
-## Public engineering evidence
+## Selected projects
 
-| Project | What it proves | Evidence |
-|---|---|---|
-| **[WCS RAG Evals](https://github.com/RaphaelCerri/wcs-rag-evals)** | Evaluation-driven RAG over public warehouse-control documentation | BM25, multilingual embeddings, pgvector, Hybrid RRF, grounded answers, sealed judge protocol, regression gates in CI |
-| **[MCP Job Radar](https://github.com/RaphaelCerri/mcp-job-radar)** | A secure, read-only MCP boundary for agent tool use | 4 typed tools, deterministic ranking, prompt-injection defenses, timeout/retry/circuit breaker, 26 tests, 90.57% coverage |
-| **[Cognitive Architecture System](https://github.com/RaphaelCerri/cognitive-architecture-system)** | Governed knowledge and multi-role AI workflows | formal ontology experiments, provenance, fairness assurance, role separation, cross-session memory, 248 passing tests |
-| **[Job Radar](https://github.com/RaphaelCerri/radar-de-vagas)** | A useful multi-source data pipeline | 6 public job sources, defensive adapters, two-layer relevance filtering, entity deduplication, explainable priority |
-| **[Layout Manager](https://github.com/RaphaelCerri/layout-manager)** | Delivery beyond AI demos | Win32 window restoration, multi-monitor coordinates, global hotkey thread, taskbar overlay, Nuitka packaging |
-
-Selected public results:
-
-- Hybrid retrieval reached **0.873 Recall@5** and **0.809 nDCG@10** on a versioned evaluation set.
-- A cross-encoder reranker was rejected after reducing dev nDCG@10 by **0.083**.
-- The MCP server verifies structured output, typed failures, resilience, tool annotations, and
-  adversarial payload handling in CI.
-- Experimental and planned capabilities are labeled separately from executable evidence.
-
-## How I engineer AI systems
-
-```mermaid
-flowchart LR
-    P[Problem and constraints] --> B[Simple baseline]
-    B --> E[Versioned evaluation]
-    E --> G{Quality gate}
-    G -->|passes| O[Operable system]
-    G -->|fails| L[Publish the limitation]
-    L --> B
-    O --> M[Monitor and regress-test]
-```
-
-- **Evaluation before complexity.** New retrieval, reranking, or generation components must beat a
-  recorded baseline. A sophisticated regression is still a regression.
-- **Models do not become authorities.** Tool scope, identity, review, and acceptance stay explicit.
-- **Failure is a state.** Timeouts, retries, cancellation, partial work, and recovery belong in the
-  design rather than in a footnote.
-- **Claims follow evidence.** I publish rejected experiments, known gaps, and what a test does not
-  prove.
+| Project | Focus |
+|---|---|
+| **[WCS RAG Evals](https://github.com/RaphaelCerri/wcs-rag-evals)** | Evaluation-first RAG, hybrid retrieval, grounded answers, and regression gates |
+| **[MCP Job Radar](https://github.com/RaphaelCerri/mcp-job-radar)** | Secure read-only MCP tools, deterministic matching, and adversarial defenses |
+| **[Cognitive Architecture System](https://github.com/RaphaelCerri/cognitive-architecture-system)** | Agent governance, ontology, provenance, fairness assurance, and institutional memory |
+| **[Job Radar](https://github.com/RaphaelCerri/radar-de-vagas)** | Multi-source job ingestion, relevance filtering, deduplication, and prioritization |
+| **[Layout Manager](https://github.com/RaphaelCerri/layout-manager)** | Windows automation with Win32, global hotkeys, resilient overlays, and native packaging |
 
 ## Technical foundation
 
